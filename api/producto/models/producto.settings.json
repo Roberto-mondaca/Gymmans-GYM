@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productos",
+  "info": {
+    "name": "Producto",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titulo": {
+      "type": "string"
+    },
+    "ImagenURL": {
+      "type": "text"
+    },
+    "Comentarios": {
+      "type": "text"
+    },
+    "Precio": {
+      "type": "integer"
+    },
+    "tipo_producto": {
+      "model": "tipo-producto"
+    },
+    "Nacional": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
